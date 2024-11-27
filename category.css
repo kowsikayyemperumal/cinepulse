@@ -1,0 +1,117 @@
+
+body {
+    background-color: #000;
+    overflow-x: hidden;
+  }
+  
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e50914;
+}
+
+.header .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 14px;
+}
+
+.header .nav a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+.header .profile img {
+    position: relative;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+  h1 {
+    margin: 0;
+  }
+    .movies-category {
+    margin-bottom: 30px;
+  }
+  
+  .movies-category h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: black;
+    position: relative;
+    top: 100px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    left: 20px;
+  }
+  
+  .movies-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .movie-card {
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: 100px;
+    left: 30px;
+  }
+  
+  .movie-card img {
+    max-width: 100%;
+    border-radius: 7px;
+    object-fit: cover;
+  }
+  
+  .movie-card h3 {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  .header .profile img {
+    position: relative;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.homepage {
+    text-align: center;
+  }
+  
+  .clickable-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    right: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .clickable-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  

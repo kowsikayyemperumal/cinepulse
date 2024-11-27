@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch now</title>
+    <link rel="stylesheet" href="watchnow.css">
+    
+</head>
+<body>
+  
+  
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          
+           <h2>THE NIGHTINGALE | Aisling Franciosi,Clare,Maya Christie,Baby Brigid|Jennifer Kent</h2>
+          <video id="movieVideo" controls autoplay width="1300" height="500" style="padding-bottom: 100px;">
+            <source src="The Nightingale new clip official  Venice Film Festival 2018720p.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    
+    var video = document.getElementById('movieVideo');
+    var videoModal = document.getElementById('videoModal');
+  
+    videoModal.addEventListener('hidden.bs.modal', function () {
+      video.pause(); 
+      video.currentTime = 0; 
+    });
+  </script>
+  
+</body>
+</html>
